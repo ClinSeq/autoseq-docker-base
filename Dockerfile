@@ -78,8 +78,6 @@ RUN     conda config --add channels r && \
           vcflib=1.0.0_rc0 \
           vt=2015.11.10
 
-RUN       apt-get update && apt-get install -y unzip wget
-
 RUN       conda install -y -c dakl autoseq-scripts
 
 CMD [ "/bin/bash" ]
